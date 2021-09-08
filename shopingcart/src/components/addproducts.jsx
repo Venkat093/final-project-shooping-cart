@@ -56,9 +56,9 @@ import Admin from './Admin';
     changediscriptionhandler=(event)=>{
         this.setState({discription:event.target.value});
     }
-    //changepricehandler=(event)=>{
-     //   this.setState({listprice:event.target.value});
-   // }
+    changepricehandler=(event)=>{
+       this.setState({listprice:event.target.value});
+   }
     changeimghandler=(event)=>{
         this.setState({img:event.target.value});
     }
@@ -137,20 +137,20 @@ import Admin from './Admin';
     value={this.state.publisher} onChange={this.changeDealerthandler}/>
       </div>
 
-//       <div className="form-group">
-//     <label htmlfor="Rom">  Price </label>
-//     <input type="text" className="form-control" id="Price"  placeholder="Price"
-//     value={this.state.listprice} onChange={this.changepricehandler}/>
-//       </div>
-  
-  
-  <div className="form-group">
+      <div className="form-group">
     <label htmlfor="Rom">  Price </label>
     <input type="text" className="form-control" id="Price"  placeholder="Price"
-    value={this.state.listprice} onChange={changepricehandler=(event)=>{
-        this.setState({listprice:event.target.value});}
-    }/>
+    value={this.state.listprice} onChange={this.changepricehandler}/>
       </div>
+  
+  
+//   <div className="form-group">
+//     <label htmlfor="Rom">  Price </label>
+//     <input type="text" className="form-control" id="Price"  placeholder="Price"
+//     value={this.state.listprice} onChange={changepricehandler=(event)=>{
+//         this.setState({listprice:event.target.value});}
+//     }/>
+//       </div>
   
   
       <div className="form-group">
